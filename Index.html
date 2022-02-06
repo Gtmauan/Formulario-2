@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" class="">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1 id="title"> Formulario de colormar  </h1>
+    <p id="description">  <strong>Seleccione la pintura que desea </strong> </p>
+    <form id="survey-form">
+
+        <div><label id="name-label"> Nombres</label>
+          <input type="name" id="name" placeholder="Nombre" required></div>
+
+        <div> <label id="email-label">Correo Electronico</label>
+          <input type="email" placeholder="Email" id="email" required> </div>
+
+        <div><label id="number-label">Edad </label> 
+          <input type="number" min="10"max="99" placeholder="Edad" id="number" required> </div>
+
+        <div><p>¿Como catalogaria su experiencia?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Seleccione</option>
+                <option value="student">Exelente</option>
+                <option value="job">Muy buena</option>
+                <option value="learner">Normal</option>
+                <option value="preferNo">Mala</option>
+                <option value="other">Muy mala</option>
+              </select></div>
+       
+            <div class="contenedor">
+              <!--El name hace que se puedan marcar varios-->
+              <p>Seleccione su opcion</p>
+              <label id="number-label"><input type="radio" 
+                class="input-radio" value="coloreal" name="user-recommend"checked> Coloreal </label> 
+
+              <label id="number-label"><input type="radio" 
+                class="input-radio" value= "solintex" name="user-recommend" > Solintex </label>
+
+              <label id="number-label"><input type="radio" 
+                class="input-radio"  value="montana" name="user-recommend"> Montana </label>
+
+              <label id="number-label"> <input type="radio" 
+                class="input-radio" value="venezolana de pinturas" name="user-recommend"> Venezolana de pinturas</label>
+            </div>
+
+            <div class="form-group">
+                <p>Algun comentario extra?</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Escribir"
+                ></textarea>
+              </div>
+
+              <div><p>
+              ¿Que te gustaria mejorar? 
+                <span>(Selecciona las opciones)</span>
+              </p></div>
+
+              <label><input 
+                name= "prefer" 
+                type="checkbox" 
+                value="servicio-cliente" 
+                class="input-checkbox">
+               Servicio al cliente</label>
+           
+               <label><input 
+                name= "prefer" 
+                type="checkbox" 
+                value="calidad-del-producto" 
+                class="input-checkbox">
+               Calidad del producto</label>
+
+               <label><input 
+                name= "prefer" 
+                type="checkbox" 
+                value="otro" 
+                class="input-checkbox">
+                Otro</label>
+                
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Aceptar
+                </button>
+              </div>
+    </form>
+</body>
+</html>
